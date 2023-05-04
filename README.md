@@ -2,4 +2,4 @@
 
 Code repository for Geometry-aware Transformer (GeoT)
 
-Codes will be available shortly.
+The code will be provided within May 8th.
