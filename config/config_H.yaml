@@ -1,0 +1,36 @@
+dataset: QM9Single
+model_name: Inferencenet
+batch_size: 32
+restart: null
+
+num_train: 110000
+num_valid: 10000
+data_seed: 42
+dataset: "data/qm9_eV.npz"
+logdir: "."
+
+num_steps: 2000000
+ema_decay: 0.99
+
+chemical_sequence_length: 32
+chemical_vocab_size: 100
+transformer_model_dim: 1024
+transformer_num_heads: 64
+transformer_hidden_dimension: 1024
+transformer_num_layers: 8
+expansion_type: schnet
+
+learning_rate: 0.0002
+warmup_steps: 3000
+decay_rate: 0.95
+decay_steps: 200000
+
+evaluation_interval: 10000
+save_interval: 10000
+
+targets: ['H']
+comment: testrun
+logdir: ./.tfLog/
+angular: false
+basis_distance: 30
+cg_size: 1
